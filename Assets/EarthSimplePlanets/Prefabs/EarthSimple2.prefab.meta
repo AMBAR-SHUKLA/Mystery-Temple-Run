@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 37c91ad7d51fe354b890bf889b39dc77
+timeCreated: 18446744011573954816
+NativeFormatImporter:
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32790
+  packageName: Earth like Planets
+  packageVersion: 1.0
+  assetPath: Assets/EarthSimplePlanets/Prefabs/EarthSimple2.prefab
+  uploadId: 227257

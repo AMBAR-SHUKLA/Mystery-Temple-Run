@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b72389a745b578840b65b9f8526e9cb6
+timeCreated: 1473688870
+licenseType: Store
+TextScriptImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 71439
+  packageName: Luminaris Starship
+  packageVersion: 1.0
+  assetPath: Assets/Luminaris Starship/Documentation/Readme Luminaris.txt
+  uploadId: 176388

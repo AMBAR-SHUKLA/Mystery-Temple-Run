@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 4560658d006465d4d8653e7634921b60
+timeCreated: 1516032383
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 25800000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 109335
+  packageName: Desert Fortification
+  packageVersion: 1.0
+  assetPath: Assets/Desert_Fortification/Show_Assets/LightingData.asset
+  uploadId: 224257

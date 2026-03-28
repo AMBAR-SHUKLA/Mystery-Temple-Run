@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: 84c7f9c3187cb8b48b91d381f568bae7
+timeCreated: 18446744011573954816
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32790
+  packageName: Earth like Planets
+  packageVersion: 1.0
+  assetPath: Assets/EarthSimplePlanets/Scripts/RevealNightEarthTexture.cs
+  uploadId: 227257

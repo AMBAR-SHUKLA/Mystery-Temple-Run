@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 12d80816242bbc14093401a96047f81d
+timeCreated: 1516042921
+licenseType: Store
+TextScriptImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 109335
+  packageName: Desert Fortification
+  packageVersion: 1.0
+  assetPath: Assets/Desert_Fortification/read_me.txt
+  uploadId: 224257

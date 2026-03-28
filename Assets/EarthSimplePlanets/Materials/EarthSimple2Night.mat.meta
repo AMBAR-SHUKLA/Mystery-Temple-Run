@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 7a45d247bf5c6784ca4a5d1c29bcb73e
+timeCreated: 18446744011573954816
+NativeFormatImporter:
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32790
+  packageName: Earth like Planets
+  packageVersion: 1.0
+  assetPath: Assets/EarthSimplePlanets/Materials/EarthSimple2Night.mat
+  uploadId: 227257

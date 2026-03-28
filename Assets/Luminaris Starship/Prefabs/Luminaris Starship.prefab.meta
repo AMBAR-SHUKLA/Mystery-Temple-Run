@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: e5078c17b52bb014882bc0363c060079
+timeCreated: 1493142036
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 71439
+  packageName: Luminaris Starship
+  packageVersion: 1.0
+  assetPath: Assets/Luminaris Starship/Prefabs/Luminaris Starship.prefab
+  uploadId: 176388

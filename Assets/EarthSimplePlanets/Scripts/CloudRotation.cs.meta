@@ -1,0 +1,18 @@
+fileFormatVersion: 2
+guid: d2cbbf0ddd8e1d24fb198c43d785d008
+timeCreated: 18446744011573954816
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32790
+  packageName: Earth like Planets
+  packageVersion: 1.0
+  assetPath: Assets/EarthSimplePlanets/Scripts/CloudRotation.cs
+  uploadId: 227257

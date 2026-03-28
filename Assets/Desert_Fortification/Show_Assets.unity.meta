@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: bb8fea705a6ca3748b6c9775ec7c5c72
+timeCreated: 1516030978
+licenseType: Store
+DefaultImporter:
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 109335
+  packageName: Desert Fortification
+  packageVersion: 1.0
+  assetPath: Assets/Desert_Fortification/Show_Assets.unity
+  uploadId: 224257

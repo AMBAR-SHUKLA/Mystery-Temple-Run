@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: 002bfbc4e90165a4abfd0635fbdeb5ed
+timeCreated: 1516022271
+licenseType: Store
+NativeFormatImporter:
+  externalObjects: {}
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 109335
+  packageName: Desert Fortification
+  packageVersion: 1.0
+  assetPath: Assets/Desert_Fortification/Materials/Tower_V2_Corner.mat
+  uploadId: 224257

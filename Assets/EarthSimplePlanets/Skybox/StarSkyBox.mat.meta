@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: b9be0c15efe8ad9489fdeead114d8ec5
+timeCreated: 18446744011573954816
+NativeFormatImporter:
+  mainObjectFileID: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32790
+  packageName: Earth like Planets
+  packageVersion: 1.0
+  assetPath: Assets/EarthSimplePlanets/Skybox/StarSkyBox.mat
+  uploadId: 227257

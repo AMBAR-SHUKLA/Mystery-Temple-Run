@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: ce20ce1e211804846a9eedc258348123
+timeCreated: 1490178012
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 11400000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 32790
+  packageName: Earth like Planets
+  packageVersion: 1.0
+  assetPath: Assets/EarthSimplePlanets/Profiles/AnalyticalProfile.asset
+  uploadId: 227257

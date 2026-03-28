@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: abe41865abe4f1f4aaa3a47171c703e3
+timeCreated: 1473680394
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 71439
+  packageName: Luminaris Starship
+  packageVersion: 1.0
+  assetPath: Assets/Luminaris Starship/Model/Luminaris Anim conttroller.controller
+  uploadId: 176388

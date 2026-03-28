@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: cb6281135d391d243a2361c53acc0816
+timeCreated: 1473678887
+licenseType: Store
+NativeFormatImporter:
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 71439
+  packageName: Luminaris Starship
+  packageVersion: 1.0
+  assetPath: Assets/Luminaris Starship/Model/Materials/Luminaris Starship.mat
+  uploadId: 176388
