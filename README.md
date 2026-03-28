@@ -1,8 +1,4 @@
-
 <div align="center">
-
-<!-- HERO BANNER -->
-<img src="https://raw.githubusercontent.com/AMBAR-SHUKLA/Mystery-Temple-Run/main/Assets/Textures/logo.png" alt="Mystery Temple Run Logo" width="320"/>
 
 # 🏛️ MYSTERY TEMPLE RUN
 
@@ -30,13 +26,13 @@ The game features **5 fully playable worlds** + an overworld (New Earth), a comp
 
 ---
 
-## 🎮 Gameplay
+## 🎮 Gameplay Loop
 
 ```
 Player auto-runs → Collects coins & chests → Avoids enemies & obstacles
-       ↓
-   Enters Portal Gate
-       ↓
+        ↓
+    Enters Portal Gate
+        ↓
 Transported to NEW WORLD (speed resets) → Loop continues until death
 ```
 
@@ -47,111 +43,94 @@ Transported to NEW WORLD (speed resets) → Loop continues until death
 | Move Left / Right | Mouse / Pointer |
 | Jump | Left Click (hold for higher jump) |
 | Slow Down | Right Click |
-| Auto-Run | Automatic |
+| Auto-Run | Automatic (no input needed) |
 
 ---
 
 ## 🌍 Worlds
 
-<table>
-<tr>
-<td align="center" width="33%">
+### 🏙️ Scene 1 — City Endless Runner
+- **Environment:** Urban city road, curved path, tall grass, modern buildings
+- **Collectibles:** 7 Basic Coins + 3 Gold Bars + 2 Treasure Chests
+- **Obstacles:** Large rock cube, wooden crates, Concrete Barrier, Stop Sign
+- **Portal:** Roman stone arch gate (Unique_Stack_A3) → teleports to Scene 2
+- **Music:** 🎵 Upbeat urban chase music with percussion
 
-### 🏙️ Scene 1 — City
-<img src="https://raw.githubusercontent.com/AMBAR-SHUKLA/Mystery-Temple-Run/main/Assets/Textures/scene1_preview.png" width="260" alt="Scene 1 City"/>
+---
 
-*Urban city road, tall grass, stone arch gates, gold coins & bars, rock obstacles*
+### 🏜️ Scene 2 — Desert World
+- **Environment:** Sand dunes, desert ruins, stealth bomber & airship overhead
+- **Collectibles:** Treasure chests hidden in ruins
+- **Obstacles:** Bomb, desert ruins structures, Glass Door
+- **Portal:** **Hexagonal stone wall portal with active fire explosion particle** → teleports to Scene 3
+- **Music:** 🎵 Tribal drums + wind ambience + ancient mystery tone
 
-🎵 Upbeat urban chase music
+---
 
-</td>
-<td align="center" width="33%">
+### ⚓ Scene 3 — Sea Port / Night Docks
+- **Environment:** Moonlit cobblestone harbour, candle-lit stone tavern interior, dock planks
+- **Collectibles:** 10 Rs Coins (₹), treasure chests, cannonballs on dock planks
+- **Obstacles:** Timber Rattlesnake, crates, iron fence, Glass Door
+- **Portal:** **Ornate golden arch gate (HD_Arch_1A) with fire cauldrons** → teleports to Scene 4
+- **Music:** 🎵 Dark pirate / sea shanty — low strings + wave SFX
+- **Special:** Bloom post-process + amber/teal colour grading active
 
-### 🏜️ Scene 2 — Desert
-<img src="https://raw.githubusercontent.com/AMBAR-SHUKLA/Mystery-Temple-Run/main/Assets/Textures/scene2_preview.png" width="260" alt="Scene 2 Desert"/>
-
-*Sand dunes, desert ruins, stealth bomber & airship, **hexagonal fire portal***
-
-🎵 Tribal drums + wind ambience
-
-</td>
-<td align="center" width="33%">
-
-### ⚓ Scene 3 — Sea Port
-<img src="https://raw.githubusercontent.com/AMBAR-SHUKLA/Mystery-Temple-Run/main/Assets/Textures/scene3_preview.png" width="260" alt="Scene 3 Sea Port"/>
-
-*Night docks, cobblestone harbour, candle-lit tavern, **golden arch gate***
-
-🎵 Dark pirate / sea shanty
-
-</td>
-</tr>
-<tr>
-<td align="center" width="33%">
+---
 
 ### 🚀 Scene 4 — Sci-Fi Spaceship
-<img src="https://raw.githubusercontent.com/AMBAR-SHUKLA/Mystery-Temple-Run/main/Assets/Textures/scene4_preview.png" width="260" alt="Scene 4 Space"/>
+- **Environment:** Nebula warp tunnel (purple/red/blue skybox), cyan energy rail strips, Earth viewport
+- **Collectibles:** Coins along the purple runner path
+- **Obstacles:** Speed corridors, ship structure
+- **Portal:** **Circular warp ring filling the tunnel cross-section** → teleports to Scene 5
+- **Music:** 🎵 Sci-fi electronic ambient — deep bass + synth pad
+- **Special:** EarthSimple1 (night-side Earth + city lights) visible through glass viewport
 
-*Nebula warp tunnel, cyan energy rails, Earth exterior viewport, **circular warp ring***
+---
 
-🎵 Sci-fi electronic ambient
+### ♟️ Scene 5 — 3D Chess Arena
+- **Environment:** Marble and gold chessboard surrounded by a volcanic lava mountain ring
+- **Enemies:** Armoured knight chess pieces (patrol)
+- **Obstacles:** Chessboard tile zones, knight formations
+- **Music:** 🎵 Epic orchestral — grand hall, brass, choir
+- **Special:** Final world — reachable through Scene 4 warp ring
 
-</td>
-<td align="center" width="33%">
-
-### ♟️ Scene 5 — Chess Arena
-<img src="https://raw.githubusercontent.com/AMBAR-SHUKLA/Mystery-Temple-Run/main/Assets/Textures/scene5_preview.png" width="260" alt="Scene 5 Chess"/>
-
-*Marble chessboard surrounded by a volcanic lava mountain ring, armoured knight soldiers*
-
-🎵 Epic orchestral — brass, choir
-
-</td>
-<td align="center" width="33%">
+---
 
 ### 🌏 New Earth — Overworld
-<img src="https://raw.githubusercontent.com/AMBAR-SHUKLA/Mystery-Temple-Run/main/Assets/Textures/newearth_preview.png" width="260" alt="New Earth"/>
-
-*Volcanic monster terrain landmark, military tanks & gunships, river fortifications, crystal mountains*
-
-🎵 Cinematic orchestral
-
-</td>
-</tr>
-</table>
+- **Environment:** Rolling green hills, volcanic monster terrain landmark (glowing eyes), river, crystal-peak mountains
+- **Assets:** Military tanks (Leopard2), gunships, T-Rex, stone tower fortifications, HD_Platform
+- **Music:** 🎵 Cinematic orchestral — wide terrain, military ambience
+- **Purpose:** Overworld / hub scene — cinematic showcase environment
 
 ---
 
 ## 🌀 Portal Gates — World Transition System
 
-Each world is linked by a **visually distinct portal gate** that triggers `OnTriggerEnter → SceneManager.LoadScene` with a fade transition and speed reset.
+Each world is connected by a visually distinct portal gate. All portals use:
+```csharp
+OnTriggerEnter → SceneManager.LoadScene(nextScene) + fade transition + speed reset
+```
 
-| Scene | Portal Type | Effect |
-|-------|-------------|--------|
-| Scene 1 → 2 | Roman stone arch (Unique_Stack_A3) | Teleports to Desert |
-| Scene 2 → 3 | **Hexagonal fire portal** (stone wall + particle flame) | Teleports to Sea Port |
-| Scene 3 → 4 | **Golden ornate arch** (HD_Arch_1A + fire cauldrons) | Teleports to Spaceship |
-| Scene 4 → 5 | **Circular warp ring** (nebula interior) | Teleports to Chess Arena |
-
-> All portals use `OnTriggerEnter → SceneManager.LoadScene` with fade transition and speed reset.
+| From | To | Portal Type |
+|------|----|-------------|
+| Scene 1 | Scene 2 | Roman stone arch (Unique_Stack_A3) |
+| Scene 2 | Scene 3 | **Hexagonal fire portal** — flame + ember particle system |
+| Scene 3 | Scene 4 | **Golden ornate arch** (HD_Arch_1A) + fire cauldrons on both sides |
+| Scene 4 | Scene 5 | **Circular warp ring** — fills tunnel cross-section, nebula interior |
 
 ---
 
 ## 💰 Collectibles & Scoring
 
-```
-┌─────────────────────────────────────────────────────────┐
-│   COLLECTIBLE          │  BEHAVIOUR                     │
-├─────────────────────────────────────────────────────────┤
-│  10 Rs Coin (₹)        │  Rotate + glow → pickup SFX + score++  │
-│  Gold Bar              │  Higher point value, Scene 1 only       │
-│  Treasure Chest        │  Open animation + bonus score on touch  │
-└─────────────────────────────────────────────────────────┘
-```
+| Collectible | Behaviour | Value |
+|-------------|-----------|-------|
+| 10 Rs Coin (₹) | Rotate continuously + glow particle → pickup SFX + score++ | Base |
+| Gold Bar | Same as coin, higher point value | Higher |
+| Treasure Chest (HarrisChestClips) | Open animation on approach + bonus score | Bonus |
 
-- Coins use **Sphere Collider** with `IsTrigger = true` — Point Value field drives the score
-- Score is shown live on a **HUD Canvas** present in every scene
-- `OnTriggerEnter` destroys coin, plays SFX, and increments counter
+- Coins use **Sphere Collider** with `IsTrigger = true` — `Point Value` field drives score
+- Live **HUD Score Counter** updates on Canvas in every scene
+- `OnTriggerEnter` destroys coin, plays SFX, and increments score
 
 ---
 
@@ -159,57 +138,60 @@ Each world is linked by a **visually distinct portal gate** that triggers `OnTri
 
 | Type | Examples | Effect |
 |------|----------|--------|
-| **Enemies** | Mutant patrol, T-Rex, Rattlesnake | Contact = Game Over |
-| **Static Hazards** | Rock cube, wooden crate, Concrete Barrier, Stop Sign | Block path |
-| **Dynamic Hazards** | Rolling boulder (planned), waves (beach phase) | Require timing |
+| **Enemies** | Mutant patrol, T-Rex, Timber Rattlesnake | Contact = Game Over |
+| **Static Hazards** | Rock cube, wooden crate, Concrete Barrier, Stop Sign | Blocks path |
+| **Dynamic Hazards** (Planned) | Rolling boulders, waves | Require timing |
 
-- Enemy detection uses **Capsule Collider + Enemy tag**
-- Player uses `Rigidbody` with exposed **Base Speed** and **Speed Increase** in Inspector
+- Enemy detection: **Capsule Collider + Enemy tag** → `OnTriggerEnter` ends run
+- Player uses `Rigidbody` with **Base Speed** and **Speed Increase** exposed in Inspector
 
 ---
 
 ## 🎵 Audio System
 
-| Scene | Music Style | SFX |
-|-------|-------------|-----|
-| New Earth | Cinematic orchestral | Military ambience |
-| Scene 1 City | Upbeat urban percussion | Footstep, jump |
-| Scene 2 Desert | Tribal drums, ancient wind | Portal whoosh |
-| Scene 3 Port | Dark pirate / sea shanty | Wave, candle crackle |
-| Scene 4 Space | Sci-fi electronic, synth pad | Deep bass hum |
-| Scene 5 Chess | Epic orchestral, brass choir | Grand hall echo |
-| All Scenes | — | Coin pickup, chest open, portal whoosh |
+| Scene | Music Style |
+|-------|-------------|
+| New Earth | Cinematic orchestral — military ambience |
+| Scene 1 City | Upbeat urban chase music with percussion |
+| Scene 2 Desert | Tribal drums, wind ambience, ancient mystery tone |
+| Scene 3 Port | Dark pirate / sea shanty — low strings, wave SFX |
+| Scene 4 Space | Sci-fi electronic ambient — deep bass, synth pad |
+| Scene 5 Chess | Epic orchestral — grand hall, brass, choir |
+| All Scenes SFX | Coin pickup, chest open, portal whoosh, jump, footstep |
 
-Per-world `AudioSource` components route through an `AudioMixer` for BGM/SFX separation. Each track **fades in on scene load** and **fades out on exit**.
+- Per-world `AudioSource` components route through `AudioMixer` for BGM/SFX separation
+- Each track **fades in on scene load** and **fades out on exit**
 
 ---
 
 ## ✨ Visual Effects
 
-| Effect | Where Active |
-|--------|-------------|
-| Fire + ember particles (hexagonal portal) | Scene 2 |
-| Coin glow / pulsing light emission | All scenes |
-| Candle flame particles (point-lit) | Scene 3 tavern interior |
+| Effect | Location |
+|--------|----------|
+| Fire + ember particle system (hexagonal portal) | Scene 2 |
+| Coin glow / pulsing light emission | All Scenes |
+| Candle flame particles (warm point-light) | Scene 3 tavern interior |
 | Bloom post-processing | Scenes 3 & 4 |
-| Colour grading (amber/teal night palette) | Scene 3 |
-| Nebula skybox texture (purple/red/blue) | Scene 4 tunnel |
-| Volcanic eyes / lava creature feature | New Earth overworld |
+| Colour grading — amber/teal night palette | Scene 3 |
+| Nebula skybox texture (purple/red/blue) | Scene 4 tunnel cylinder |
+| Volcanic eyes / lava creature landmark | New Earth overworld |
+| FlamesParticleEffect on candle holders | Scene 3 interior |
 
 ---
 
 ## 🏗️ Technical Architecture
 
 ```
-Engine          Unity 6 LTS — 6000.3.4f1
-Render Pipeline Built-in Renderer / DX11
-Post-Processing URP Volume — Bloom + Colour Grading (Scenes 3 & 4)
-Teleport System OnTriggerEnter → SceneManager.LoadScene + fade coroutine
-Coin Script     Sphere IsTrigger | PointValue field | Score++
-Player Script   BaseSpeed + SpeedIncrease (Inspector-tunable) | Rigidbody
-Enemy Script    CapsuleCollider | Enemy Tag | OnTriggerEnter → GameOver
-VCS             Unity VCS (version controlled)
-Scenes          GameManager + New Earth + Scene 1–5 (7 total)
+Engine           Unity 6 LTS — 6000.3.4f1
+Render Pipeline  Built-in Renderer / DX11
+Post-Processing  Volume — Bloom + Colour Grading (Scenes 3 & 4)
+Teleport System  OnTriggerEnter → SceneManager.LoadScene + fade coroutine
+Coin Script      Sphere IsTrigger | PointValue field | Score++
+Player Script    BaseSpeed + SpeedIncrease (Inspector-tunable) | Rigidbody
+Enemy Script     CapsuleCollider | Enemy Tag | OnTriggerEnter → GameOver
+Audio            AudioSource per scene | AudioMixer BGM/SFX routing
+VCS              Unity VCS (version controlled)
+Total Scenes     7 (GameManager + New Earth + Scene 1–5)
 ```
 
 ---
@@ -227,7 +209,7 @@ Scenes          GameManager + New Earth + Scene 1–5 (7 total)
 | Auto-Run + Speed Escalation | ✅ Done | 100% |
 | Mouse Direction Control | ✅ Done | 100% |
 | Jump Mechanic | ✅ Done | 100% |
-| Coin Collection + Score | ✅ Done | 100% |
+| Coin Collection + Score HUD | ✅ Done | 100% |
 | Treasure Chests | ✅ Done | 100% |
 | Teleport / Portal Gates | ✅ Done | 100% |
 | Audio / BGM + SFX | ✅ Done | 100% |
@@ -248,17 +230,16 @@ Mystery-Temple-Run/
 │   ├── Scenes/
 │   │   ├── GameManager.unity
 │   │   ├── New Earth.unity
-│   │   ├── Scean 1.unity          ← City Endless Runner
-│   │   ├── Scean 2 Desert.unity   ← Desert World
-│   │   ├── Scean 3 port.unity     ← Sea Port / Night Docks
-│   │   ├── Scean 3 po....unity    ← Port alternate
-│   │   ├── Scean 4.unity          ← Sci-Fi Spaceship
-│   │   └── Scean 5.unity          ← Chess Arena
+│   │   ├── Scean 1.unity            ← City Endless Runner
+│   │   ├── Scean 2 Desert.unity     ← Desert World
+│   │   ├── Scean 3 port.unity       ← Sea Port / Night Docks
+│   │   ├── Scean 4.unity            ← Sci-Fi Spaceship
+│   │   └── Scean 5.unity            ← Chess Arena
 │   ├── Scripts/
-│   │   ├── PlayerController.cs    ← Auto-run, speed escalation, jump
-│   │   ├── CoinCollect.cs         ← Trigger, score++, SFX
-│   │   ├── EnemyCollision.cs      ← Game-over on contact
-│   │   └── SceneTrigger.cs        ← Portal transition + fade
+│   │   ├── PlayerController.cs      ← Auto-run, speed escalation, jump
+│   │   ├── CoinCollect.cs           ← Trigger, score++, SFX
+│   │   ├── EnemyCollision.cs        ← Game-over on contact
+│   │   └── SceneTrigger.cs          ← Portal transition + fade
 │   ├── Prefabs/
 │   ├── Textures/
 │   ├── Materials/
@@ -272,50 +253,50 @@ Mystery-Temple-Run/
 ## 🚀 Getting Started
 
 ### Prerequisites
-- Unity **6000.3.4f1 LTS** (or later 6.x)
+- **Unity 6000.3.4f1 LTS** or later
 - Windows / Mac / Linux
 
-### Run the Project
+### Clone & Run
 
 ```bash
 # Clone the repository
 git clone https://github.com/AMBAR-SHUKLA/Mystery-Temple-Run.git
 
-# Open in Unity Hub
-# File → Open Project → Select cloned folder
-
+# Open Unity Hub → Add Project → Select the cloned folder
 # Open GameManager scene first, then press ▶ Play
 ```
 
 ### Scene Load Order
 ```
-GameManager → New Earth → Scene 1 → Scene 2 → Scene 3 → Scene 4 → Scene 5
+GameManager → New Earth → Scene 1 (City) → Scene 2 (Desert)
+    → Scene 3 (Sea Port) → Scene 4 (Spaceship) → Scene 5 (Chess)
 ```
-
----
-
-## 🗺️ GDD Summary
-
-Mystery Temple Run is designed around three core pillars:
-
-1. **Dynamic Worlds** — Each portal gate leads to a completely different environment with unique terrain, music, enemies, and atmosphere. No two scenes feel alike.
-
-2. **Progressive Challenge** — Player speed gradually increases within each world, raising the difficulty. Entering a portal resets speed, giving a brief moment of relief before the next escalation.
-
-3. **Risk-Reward Exploration** — Harder, riskier sections of each world place higher-value coins and treasure chests. Players must choose whether to play it safe or push their luck for a higher score.
-
-*Target Audience: Ages 10–35 | Casual + Adventure runner fans | PC (Windows, Mac, Linux)*
 
 ---
 
 ## 🔮 Roadmap
 
-- [ ] Procedural infinite level spawner (modular prefab segments)
-- [ ] Knight L-move hazard pattern in Chess Arena
-- [ ] Windows build export + QA playtest across all 5 transitions
+- [ ] Procedural infinite level spawner (convert static layouts to runtime spawner)
+- [ ] Knight L-move obstacle hazard pattern in Chess Arena
+- [ ] Full QA playtest across all 5 world transitions
+- [ ] Windows build export (primary target)
+- [ ] Mac / Linux build export
 - [ ] Audio asset compression for smaller build size
-- [ ] Barrel mesh polygon fix (resolve DX11 console warning)
+- [ ] Barrel mesh polygon fix (resolve DX11 console warning — non-breaking)
 - [ ] Rename scene files: `Scean → Scene`
+
+---
+
+## 🎯 Design Pillars
+
+**1. Dynamic Worlds**
+Each portal gate leads to a completely different environment — new terrain, music, enemies, and visual atmosphere. No two scenes feel alike.
+
+**2. Progressive Challenge**
+Speed gradually increases within each world. Entering a portal resets it, giving a brief moment of relief before the next escalation begins.
+
+**3. Risk-Reward Exploration**
+Harder sections of each world place higher-value coins and treasure chests. Players must decide whether to play it safe or push their luck for a higher score.
 
 ---
 
@@ -323,8 +304,8 @@ Mystery Temple Run is designed around three core pillars:
 
 <div align="center">
 
-| | |
-|---|---|
+| Field | Info |
+|-------|------|
 | **Name** | Ambar Shukla |
 | **Student ID** | 12221174 |
 | **University** | Lovely Professional University |
@@ -338,27 +319,7 @@ Mystery Temple Run is designed around three core pillars:
 
 ---
 
-## 📸 Screenshots
-
-> *All screenshots taken from Unity 6 Editor — Scene View*
-
-| Scene 1 — City Runner | Scene 2 — Desert Fire Portal |
-|:---:|:---:|
-| Player running on city road with coins, gold bars, and stone arch gate visible ahead | Hexagonal stone portal blazing with fire particle explosion — the standout visual of Scene 2 |
-
-| Scene 3 — Sea Port Night Docks | Scene 3 — Candle-Lit Tavern Interior |
-|:---:|:---:|
-| Moonlit cobblestone harbour with golden arch gate, fire cauldrons, and floating coins | Stone tavern passage with warm candle fire particles, wooden furniture, atmospheric bloom |
-
-| Scene 4 — Nebula Warp Tunnel | New Earth — Overworld |
-|:---:|:---:|
-| Player silhouette mid-run through sci-fi tunnel, circular warp ring portal ahead, purple nebula skybox | Volcanic monster terrain feature, military fortifications, rolling green hills, crystal-peak mountains |
-
----
-
 <div align="center">
-
----
 
 *Mystery Temple Run — Final Prototype Build · March 2026*
 
